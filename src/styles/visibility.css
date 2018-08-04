@@ -1,0 +1,47 @@
+@media (max-width: 991px) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+
+.visible-md {
+  display: none !important;
+}
+
+@media (max-width: 991px) {
+  .visible-md {
+    display: block !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+
+.visible-sm {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  .visible-sm {
+    display: block !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+.visible-xs {
+  display: none !important;
+}
+
+@media (max-width: 575px) {
+  .visible-xs {
+    display: block !important;
+  }
+}
