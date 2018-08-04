@@ -1,13 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const ButtonComponent = ({ className, children, onClick }) => {
-  return (
-    <button className={className} onClick={onClick}>
-      {children}
-    </button>
-  )
-}
+const ButtonComponent = ({ className, children, onClick }) => (
+  <button className={className} onClick={onClick}>
+    {children}
+  </button>
+)
 
 const Button = styled(ButtonComponent)`
   &:focus {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar'
 import { Link } from '../typography'
-import { Hamburger, Collapse } from '../common'
+import { Hamburger, Collapsible } from '../common'
 
 class Header extends Component {
   state = {
@@ -9,7 +9,6 @@ class Header extends Component {
   }
 
   toggleCollapse = () => {
-    console.log('stokeleyeee')
     this.setState({ isExpanded: !this.state.isExpanded })
   }
 
@@ -31,9 +30,9 @@ class Header extends Component {
         <Hamburger
           className="btn visible-md"
           onClick={this.toggleCollapse} />
-        <Collapse className="collapse" isExpanded={this.state.isExpanded}>
+        {/* <Collapsible isExpanded={this.state.isExpanded}>
           <h1>Collapseeeeee</h1>
-        </Collapse>
+        </Collapsible> */}
       </Navbar>
     )
   }

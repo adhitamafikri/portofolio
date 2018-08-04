@@ -1,15 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const HamburgerButton = ({ className, onClick }) => {
-  return (
-    <button className={className} onClick={onClick}>
-      <div className="line my-1"></div>
-      <div className="line my-1"></div>
-      <div className="line my-1"></div>
-    </button>
-  )
-}
+const HamburgerButton = ({ className, onClick }) => (
+  <button className={className} onClick={onClick}>
+    <div className="line my-1"></div>
+    <div className="line my-1"></div>
+    <div className="line my-1"></div>
+  </button>
+)
 
 const Hamburger = styled(HamburgerButton)`
   background-color: transparent;
