@@ -5,9 +5,9 @@ import registerServiceWorker from './registerServiceWorker'
 import 'bootstrap/dist/css/bootstrap.css'
 
 import { injectGlobal } from 'styled-components'
-import globalStyle from './styles/globalStyle'
-import './styles/visibility.css'
-import './styles/typography.css'
+import globalStyle from './globalStyle'
+
+import './visibility.css'
 
 injectGlobal`
   ${globalStyle}
