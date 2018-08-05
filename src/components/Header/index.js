@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar'
-import { Collapsible, Button, Div } from '../common'
+import { Collapsible, Button, Div, Container } from '../common'
 import { Link, UnorderedList, ListItem } from '../typography'
 
 class Header extends Component {
@@ -15,7 +15,7 @@ class Header extends Component {
   render() { 
     return (
       <Navbar>
-        <Div className="container d-flex justify-content-between align-items-center">
+        <Container className="container d-flex justify-content-between align-items-center">
           <Link href="#">Fikri's Den</Link>
           <UnorderedList className="d-flex justify-content-around align-items-center hidden-md">
             <ListItem>
@@ -38,7 +38,7 @@ class Header extends Component {
             <Link href="#">Bio</Link>
             <Link href="#">My Skills</Link>
           </Collapsible>
-        </Div>
+        </Container>
       </Navbar>
     )
   }

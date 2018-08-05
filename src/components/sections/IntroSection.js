@@ -1,6 +1,6 @@
 import React from 'react'
-import { Div, Section } from '../common'
-import { H2, Italic, P } from '../typography'
+import { Container, Section } from '../common'
+import { H2, P } from '../typography'
 
 // import theme
 import theme from '../themes/main'
@@ -11,7 +11,7 @@ const { introSectionTheme } = theme
 const IntroSection = () => (
   <ThemeProvider theme={introSectionTheme}>
     <Section>
-      <Div className="container" paddingV="3rem">
+      <Container className="container" paddingV="3rem">
         <H2 italic>
           A Brief Introduction
         </H2>
@@ -26,7 +26,7 @@ const IntroSection = () => (
           everyday task. He likes to learn and utilize 
           new technologies into his projects.
         </P>
-      </Div>
+      </Container>
     </Section>
   </ThemeProvider>
 )
