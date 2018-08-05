@@ -1,5 +1,4 @@
 export * from './Section'
-export * from './Container'
+export * from './Div'
 export * from './Button'
-export * from './Hamburger'
 export * from './Collapsible'

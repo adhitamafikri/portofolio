@@ -3,9 +3,16 @@ import { primaryAccent } from '../variables'
 
 const Navbar = styled.nav`
   background-color: ${primaryAccent};
-  height: 60px;
+  width: 100%;
   color: white;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 0;
+
+  > div {
+    width: inherit;
+    height: 60px;
+  }
 `
 
 export default Navbar

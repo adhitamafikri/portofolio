@@ -1,20 +1,32 @@
 import React from 'react'
-import { Container, Section } from '../common'
-import { H1 } from '../typography'
-import { primaryAccent } from '../variables'
+import { Div, Section } from '../common'
+import { H2, Italic, P } from '../typography'
 
 // import theme
 import theme from '../themes/main'
-import styled, { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from 'styled-components'
+
+const { introSectionTheme } = theme
 
 const IntroSection = () => (
-  <ThemeProvider theme={theme}>
-    <Section className="intro-section">
-      <Container className="container p-5">
-        <H1 className="welcome-heading">
-          Hey,<br/>Welcome to My<br/>Portofolio Site!
-        </H1>
-      </Container>
+  <ThemeProvider theme={introSectionTheme}>
+    <Section>
+      <Div className="container" paddingV="3rem">
+        <H2 italic>
+          A Brief Introduction
+        </H2>
+        <P>
+          An energetic introverted IT student at Binus 
+          University who loves visual thingy and gaming 
+          so much. He has been working at an online B2B 
+          marketplace as a frontend engineer intern until now.
+        </P>
+        <P>
+          Dealing with HTML, CSS, and Javascript is his 
+          everyday task. He likes to learn and utilize 
+          new technologies into his projects.
+        </P>
+      </Div>
     </Section>
   </ThemeProvider>
 )

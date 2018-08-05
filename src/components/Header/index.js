@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar'
-import { Hamburger, Collapsible } from '../common'
-import { Link } from '../typography'
+import { Collapsible, Button, Div } from '../common'
+import { Link, UnorderedList, ListItem } from '../typography'
 
 class Header extends Component {
   state = {
@@ -14,27 +14,31 @@ class Header extends Component {
 
   render() { 
     return (
-      <Navbar className="navbar fixed-top" role="navigation">
-        <Link className="navbar-brand" href="#">Fikri's Den</Link>
-        <ul className="nav mx-auto hidden-md">
-          <li className="nav-item">
-            <Link href="#" className="nav-a">Intro</Link>
-          </li>
-          <li className="nav-item">
-            <Link href="#" className="nav-a">Bio</Link>
-          </li>
-          <li className="nav-item">
-            <Link href="#" className="nav-a">My Skills</Link>
-          </li>
-        </ul>
-        <Hamburger
-          className="btn visible-md p-0"
-          onClick={this.toggleCollapse} />
-        <Collapsible isExpanded={this.state.isExpanded}>
-          <Link href="#">Intro</Link>
-          <Link href="#">Bio</Link>
-          <Link href="#">My Skills</Link>
-        </Collapsible>
+      <Navbar>
+        <Div className="container d-flex justify-content-between align-items-center">
+          <Link href="#">Fikri's Den</Link>
+          <UnorderedList className="d-flex justify-content-around align-items-center hidden-md">
+            <ListItem>
+              <Link href="#">Intro</Link>
+            </ListItem>
+            <ListItem>
+              <Link href="#">Bio</Link>
+            </ListItem>
+            <ListItem>
+              <Link href="#">My Skills</Link>
+            </ListItem>
+          </UnorderedList>
+          <Button hamburger className="visible-md" onClick={this.toggleCollapse}>
+            <Div className="burger-line"></Div>
+            <Div className="burger-line"></Div>
+            <Div className="burger-line"></Div>
+          </Button>
+          <Collapsible isExpanded={this.state.isExpanded}>
+            <Link href="#">Intro</Link>
+            <Link href="#">Bio</Link>
+            <Link href="#">My Skills</Link>
+          </Collapsible>
+        </Div>
       </Navbar>
     )
   }

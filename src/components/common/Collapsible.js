@@ -5,7 +5,6 @@ const Collapsible = styled.div`
   background: ${primaryAccent};
   width: 100%;
   height: 100%;
-  border-top: 4px solid white;
   padding: 1em;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   transition: all 0.3s;

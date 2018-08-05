@@ -1,9 +1,8 @@
-import React from 'react'
+import styled from 'styled-components'
 
-const Section = ({ id, children }) => (
-  <section id={id}>
-    {children}
-  </section>
-)
+const Section = styled.section`
+  background-color: ${props => props.theme.backgroundColor};
+  color: ${props => props.theme.fontColor};
+`
 
 export { Section }
