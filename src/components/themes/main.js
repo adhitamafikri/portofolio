@@ -1,4 +1,4 @@
-import { primaryAccent, secondaryAccent } from '../variables'
+import { primaryAccent, secondaryAccent, tertiaryAccent, quaternaryAccent } from '../variables'
 
 export default {
   buttonPrimaryColor: 'white',
@@ -9,7 +9,13 @@ export default {
   },
 
   introSectionTheme: {
-    backgroundColor: secondaryAccent,
+    backgroundColor: tertiaryAccent,
     fontColor: 'white'
+  },
+
+  BioSectionTheme: {
+    backgroundColor: secondaryAccent,
+    fontColor: 'white',
+    tileColor: quaternaryAccent
   }
 }
