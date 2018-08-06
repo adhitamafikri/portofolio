@@ -11,7 +11,7 @@ const { welcomeSectionTheme } = theme
 const WelcomeSection = () => (
   <ThemeProvider theme={welcomeSectionTheme}>
     <Section className="welcome-section">
-      <Container className="container" paddingV="3rem">
+      <Container className="container" py3>
         <H1>
           Hey,<br/>Welcome to My<br/>Portofolio Site!
         </H1>

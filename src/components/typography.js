@@ -27,12 +27,12 @@ const text = `
   font-weight: normal;
   font-size: 1.3rem;
   line-height: 1.56;
+  margin-bottom: 0;
 `
 // generic style for text: END
 
 export const P = styled.p`
   ${text}
-  margin-bottom: 2rem;
 `
 export const Italic = styled.i`
   ${text}
