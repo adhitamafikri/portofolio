@@ -7,15 +7,11 @@ const amounts = [
 
 const renderLine = () => {
   return (
-    amounts.map(item => <ChartLine amount={item} />)
+    amounts.map((item, key) => <ChartLine amount={item} key={key} />)
   )
 }
 const Chart = () => (
   <ChartCanvas className="d-flex flex-column justify-content-between">
-    {/* <ChartLine amount="100" />
-    <ChartLine amount="100" />
-    <ChartLine amount="85" />
-    <ChartLine amount="75" /> */}
     {renderLine()}
   </ChartCanvas>
 )

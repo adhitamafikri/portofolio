@@ -2,6 +2,11 @@ import { primaryAccent, secondaryAccent, tertiaryAccent, quaternaryAccent } from
 
 export default {
   buttonPrimaryColor: 'white',
+
+  headerTheme: {
+    backgroundColor: primaryAccent,
+    fontColor: 'white'
+  },
   
   welcomeSectionTheme: {
     backgroundColor: primaryAccent,

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Section } from '../common'
+import { Section, Div } from '../common'
 import { H1, Italic } from '../typography'
 
 // import theme
@@ -11,12 +11,12 @@ const { welcomeSectionTheme } = theme
 const WelcomeSection = () => (
   <ThemeProvider theme={welcomeSectionTheme}>
     <Section className="welcome-section">
-      <Container className="container" py3>
+      <Div className="container py-3 px-3">
         <H1>
           Hey,<br/>Welcome to My<br/>Portofolio Site!
         </H1>
         <Italic>I'm Adhitama Fikri, glad you come to my site :)</Italic>
-      </Container>
+      </Div>
     </Section>
   </ThemeProvider>
 )

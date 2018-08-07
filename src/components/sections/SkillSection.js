@@ -1,5 +1,5 @@
 import React from 'react'
-import { Section, Container, Div } from '../common'
+import { Section, Div } from '../common'
 import { H2, UnorderedList, ListItem } from '../typography'
 import Chart from '../Chart'
 
@@ -25,7 +25,7 @@ const renderSkills = () => {
 const SkillSection = () => (
   <ThemeProvider theme={SkillSectionTheme}>
     <Section>
-      <Container className="container" py3>
+      <Div className="container py-3 px-3">
         <H2 italic>Technical Skills</H2>
         <Div className="row">
           <Div className="col-3">
@@ -37,7 +37,7 @@ const SkillSection = () => (
             <Chart />
           </Div>
         </Div>
-      </Container>
+      </Div>
     </Section>
   </ThemeProvider> 
 )

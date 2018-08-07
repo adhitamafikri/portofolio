@@ -1,11 +1,10 @@
 import styled from 'styled-components'
-import { primaryAccent } from '../variables'
 
 const Collapsible = styled.div`
-  background: ${primaryAccent};
+  background: ${props => props.theme.backgroundColor || 'black'};
+  color: ${props => props.theme.fontColor || 'black'};
   width: 100%;
   height: 100%;
-  padding: 1em;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   transition: all 0.3s;
   position: absolute;
