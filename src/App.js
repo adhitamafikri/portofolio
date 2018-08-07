@@ -6,6 +6,7 @@ import { WelcomeSection, IntroSection, BioSection, SkillSection } from './compon
 
 // import theme
 import MainTheme from './components/themes/main'
+import AlternateTheme from './components/themes/alternate'
 
 class App extends Component {
   constructor(props) {
@@ -15,16 +16,31 @@ class App extends Component {
     }
   }
 
+  changeThemeDefault = () => {
+    this.setState({ theme: MainTheme })
+  }
+
+  changeThemeAlternate = () => {
+    this.setState({ theme: AlternateTheme })
+  }
+
   render() {
+    const { 
+      headerTheme, welcomeSectionTheme, introSectionTheme,
+      BioSectionTheme, SkillSectionTheme, FooterTheme
+    } = this.state.theme
+
     return (
       <div className="App">
-        <Header />
+        <Header theme={headerTheme} />
         <main role="main">
-          <WelcomeSection />
-          <IntroSection />
-          <BioSection />
-          <SkillSection />
-          <Footer />
+          <WelcomeSection theme={welcomeSectionTheme} />
+          <IntroSection theme={introSectionTheme} />
+          <BioSection theme={BioSectionTheme} />
+          <SkillSection theme={SkillSectionTheme} />
+          <Footer theme={FooterTheme}
+            changeThemeDefault={this.changeThemeDefault}
+            changeThemeAlternate={this.changeThemeAlternate} />
         </main>
       </div>
     )

@@ -23,10 +23,6 @@ const globalStyle = `
   main {
     margin-top: 6rem;
   }
-
-  div {
-    transition: all 0.3s;
-  }
 `
 
 export default globalStyle

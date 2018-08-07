@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 
 const Div = styled.div`
@@ -15,7 +14,8 @@ const Div = styled.div`
     background-color: ${props.theme.tileColor || 'transparent'};
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
     padding-top: 0.5rem;
-    padding-bottom: 0.5rem;` : ''
+    padding-bottom: 0.5rem;
+    transition: all 0.8s;` : ''
   }
 `
 

@@ -3,13 +3,13 @@ import Navbar from './Navbar'
 import { Button, Div, Collapsible } from '../common'
 import { Link, UnorderedList, ListItem } from '../typography'
 import { ThemeProvider } from 'styled-components'
-import theme from '../themes/main'
-
-const { headerTheme } = theme
 
 class Header extends Component {
-  state = {
-    isExpanded: false
+  constructor(props) {
+    super(props)
+    this.state = {
+      isExpanded: false
+    }
   }
 
   toggleCollapse = () => {
@@ -18,7 +18,7 @@ class Header extends Component {
 
   render() { 
     return (
-      <ThemeProvider theme={headerTheme}>
+      <ThemeProvider theme={this.props.theme}>
         <Navbar>
           <Div className="container d-flex justify-content-between align-items-center px-3">
             <Link href="#">Fikri's Den</Link>

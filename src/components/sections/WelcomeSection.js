@@ -3,13 +3,10 @@ import { Section, Div } from '../common'
 import { H1, Italic } from '../typography'
 
 // import theme
-import theme from '../themes/main'
 import { ThemeProvider } from 'styled-components'
 
-const { welcomeSectionTheme } = theme
-
-const WelcomeSection = () => (
-  <ThemeProvider theme={welcomeSectionTheme}>
+const WelcomeSection = ({ theme }) => (
+  <ThemeProvider theme={theme}>
     <Section className="welcome-section">
       <Div className="container py-3 px-3">
         <H1>

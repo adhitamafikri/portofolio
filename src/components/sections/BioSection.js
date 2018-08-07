@@ -3,16 +3,13 @@ import { Section, Div } from '../common'
 import { H2, P } from '../typography'
 
 // import theme
-import theme from '../themes/main'
 import { ThemeProvider } from 'styled-components'
 
 // import my photo
 import Photo from '../../img/photo.jpg'
 
-const { BioSectionTheme } = theme
-
-const BioSection = () => (
-  <ThemeProvider theme={BioSectionTheme}>
+const BioSection = ({ theme }) => (
+  <ThemeProvider theme={theme}>
     <Section>
       <Div className="container py-3 px-3">
         <H2 italic>Bio</H2>

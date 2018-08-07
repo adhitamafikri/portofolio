@@ -4,10 +4,7 @@ import { H2, UnorderedList, ListItem } from '../typography'
 import Chart from '../Chart'
 
 // import theme
-import theme from '../themes/main'
 import { ThemeProvider } from 'styled-components'
-
-const { SkillSectionTheme } = theme
 
 const skills = [
   'HTML', 'CSS', 'JS', 'VueJS', 'ReactJS', 'AngularJS',
@@ -22,8 +19,8 @@ const renderSkills = () => {
   )
 }
 
-const SkillSection = () => (
-  <ThemeProvider theme={SkillSectionTheme}>
+const SkillSection = ({ theme }) => (
+  <ThemeProvider theme={theme}>
     <Section>
       <Div className="container py-3 px-3">
         <H2 italic>Technical Skills</H2>

@@ -3,13 +3,10 @@ import { Section, Div } from '../common'
 import { H2, P } from '../typography'
 
 // import theme
-import theme from '../themes/main'
 import { ThemeProvider } from 'styled-components'
 
-const { introSectionTheme } = theme
-
-const IntroSection = () => (
-  <ThemeProvider theme={introSectionTheme}>
+const IntroSection = ({ theme }) => (
+  <ThemeProvider theme={theme}>
     <Section>
       <Div className="container py-3 px-3">
         <H2 italic>
