@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import App from './App'
 import registerServiceWorker from './registerServiceWorker'
 import 'bootstrap/dist/css/bootstrap-reboot.css'
-import 'bootstrap/dist/css/bootstrap-grid.css'
+import './bootstrap-custom.css'
 
 import { injectGlobal } from 'styled-components'
 import globalStyle from './globalStyle'

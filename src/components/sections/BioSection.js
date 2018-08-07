@@ -1,5 +1,5 @@
 import React from 'react'
-import { Section, Container, Div, Tile, Image } from '../common'
+import { Section, Container, Div, Tile } from '../common'
 import { H2, P } from '../typography'
 
 // import theme
@@ -17,7 +17,7 @@ const BioSection = () => (
       <Container className="container" py3>
         <H2 italic>Bio</H2>
         <Div className="row">
-          <Div className="col-6">
+          <Div className="col-6 pr-0">
             <Tile px1>
               <P>Name: Adhitama Fikri</P>
             </Tile>
@@ -31,7 +31,7 @@ const BioSection = () => (
               <P>Hobbies: musics, eating, gaming, movies</P>
             </Tile>
           </Div>
-          <Div className="col-6">
+          <Div className="col-6 d-flex justify-content-center">
             <Tile className="photo-holder"
                   rounded square size="120px"
                   bgImage={Photo} bgSize="cover" />

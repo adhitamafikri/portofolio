@@ -54,15 +54,18 @@ export const Link = styled.a`
 const List = `
   list-style-type: none;
   margin-bottom: 0;
+  padding-left: 0;
 `
 // generic styles for List: END
 
 export const UnorderedList = styled.ul`
   ${List}
+  height: ${props => `${props.height}px` || 'auto'};
 `
 export const OrderedList = styled.ol`
   ${List}
+  height: ${props => `${props.height}px` || 'auto'};
 `
 export const ListItem = styled.li`
-  padding: 0 1.6rem;
+  
 `

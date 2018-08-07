@@ -8,6 +8,7 @@ const Navbar = styled.nav`
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   position: fixed;
   top: 0;
+  z-index: 1030;
 
   > div {
     width: inherit;

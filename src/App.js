@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import Header from './components/Header'
+import Footer from './components/Footer'
 // sections import
-import { WelcomeSection, IntroSection, BioSection } from './components/sections'
+import { WelcomeSection, IntroSection, BioSection, SkillSection } from './components/sections'
 
 class App extends Component {
   render() {
@@ -12,6 +13,8 @@ class App extends Component {
           <WelcomeSection />
           <IntroSection />
           <BioSection />
+          <SkillSection />
+          <Footer />
         </main>
       </div>
     )

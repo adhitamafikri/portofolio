@@ -17,5 +17,15 @@ export default {
     backgroundColor: secondaryAccent,
     fontColor: 'white',
     tileColor: quaternaryAccent
+  },
+
+  SkillSectionTheme: {
+    backgroundColor: tertiaryAccent,
+    fontColor: 'white',
+  },
+
+  FooterTheme: {
+    backgroundColor: 'black',
+    fontColor: 'white',
   }
 }

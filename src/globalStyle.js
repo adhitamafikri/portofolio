@@ -5,7 +5,7 @@ const globalStyle = `
     font-family: 'Arimo';
     src: 
       local('Arimo-Regular')
-      url(./fonts/Arimo-Regular.ttf);
+      url(${Arimo});
     font-style: normal;
   }
 
@@ -22,6 +22,10 @@ const globalStyle = `
 
   main {
     margin-top: 6rem;
+  }
+
+  div {
+    transition: all 0.3s;
   }
 `
 
