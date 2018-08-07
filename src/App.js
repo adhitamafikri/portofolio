@@ -4,7 +4,17 @@ import Footer from './components/Footer'
 // sections import
 import { WelcomeSection, IntroSection, BioSection, SkillSection } from './components/sections'
 
+// import theme
+import MainTheme from './components/themes/main'
+
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      theme: MainTheme
+    }
+  }
+
   render() {
     return (
       <div className="App">
